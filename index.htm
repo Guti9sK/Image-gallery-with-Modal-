@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Galeria de Imágenes</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Galeria de flores hermosas</h1>
+      <div class="galeria">
+        <div class="imagen1">
+          <h2>Cerezos</h2>
+          <img
+            src="/images/Cerezo.jpg"
+            alt="ramas de varias flores de cerezo con el cielo celeste de fondo "
+          />
+          <a href="#" class="infoCerezo" onclick="openModalCerezo()"
+            >Leer más</a
+          >
+        </div>
+        <div class="imagen2">
+          <h2>Lirios</h2>
+          <img
+            src="/images/Lirio.jpg"
+            alt="dos Lirios amarillos destacando sobre una gran vegetación verde"
+          />
+          <a href="#" class="infoLirio" onclick="openModalLirio()">Leer más</a>
+        </div>
+        <div class="imagen3">
+          <h2>Azaleas</h2>
+          <img
+            src="/images/Azalea.jpg"
+            alt="varias flores Azaleas moradas en una vegetación verde"
+          />
+          <a href="#" class="infoAzalea" onclick="openModalAzalea()"
+            >Leer más</a
+          >
+        </div>
+        <div class="imagen4">
+          <h2>Acianos</h2>
+          <img
+            src="/images/Aciano.jpg"
+            alt="ramas de varias flores de cerezo con el cielo celeste de fondo "
+          />
+          <a href="#" class="infoAciano" onclick="openModalAciano()"
+            >Leer más</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <div id="modal-cerezo" class="modal">
+      <div class="modal-content">
+        <h2>Las flores de cerezo: un símbolo de belleza y fugacidad</h2>
+        <p>
+          Las flores de cerezo, también conocidas como sakura en japonés, son
+          una de las flores más emblemáticas y hermosas del mundo. Su delicada
+          belleza y su breve duración las convierten en un símbolo de la
+          fugacidad de la vida.
+          <br />
+          <br />
+
+          Estas flores tienen una gran importancia cultural en Japón. Se asocian
+          con la belleza, la feminidad, la renovación y la fugacidad de la vida.
+          En la cultura japonesa, la muerte no se considera un final, sino un
+          paso más en el ciclo de la vida. Por eso, las flores de cerezo también
+          se asocian con la muerte y la reencarnación.
+          <br />
+          <br />
+
+          El hanami es una tradición que se remonta a siglos atrás. Durante el
+          hanami, las personas se reúnen bajo los cerezos en flor para celebrar
+          la llegada de la primavera. Es una oportunidad para disfrutar de la
+          belleza de las flores, compartir con amigos y familiares, y
+          reflexionar sobre el significado de la vida.
+          <br />
+          <br />
+        </p>
+        <button onclick="closeModalCerezo()">Cerrar</button>
+      </div>
+    </div>
+
+    <div id="modal-lirio" class="modal">
+      <div class="modal-content">
+        <h2>Lirios: las flores de la pureza y la inocencia</h2>
+        <p>
+          Los lirios son flores delicadas y hermosas que se encuentran en todo
+          el mundo. Son una de las flores más antiguas que se conocen, se han
+          encontrado fósiles de lirios que datan de hace más de 100 millones de
+          años. Son miembros de la familia de las liliáceas y hay más de 100
+          especies diferentes de lirios.
+          <br />
+          <br />
+          Las flores de lirio son muy populares para arreglos florales y también
+          se utilizan como plantas ornamentales. Se caracterizan por sus grandes
+          flores en forma de trompeta, que pueden ser de color blanco, amarillo,
+          naranja, rosa, rojo o morado.
+          <br />
+          <br />
+
+          Son muy fáciles de cuidar y pueden crecer en una variedad de
+          condiciones climáticas. Los lirios tienen un significado simbólico de
+          pureza, inocencia y resurrección. Se han utilizado en ceremonias
+          religiosas y culturales durante siglos.
+
+          <br />
+          <br />
+        </p>
+        <button onclick="closeModalLirio()">Cerrar</button>
+      </div>
+    </div>
+
+    <div id="modal-azalea" class="modal">
+      <div class="modal-content">
+        <h2>Azaleas: las flores de la primavera</h2>
+        <p>
+          Las azaleas son arbustos de hoja perenne o caduca que pertenecen a la
+          familia de las Ericáceas. Son originarias de Asia, Europa y América
+          del Norte, pero se han cultivado en todo el mundo como plantas
+          ornamentales. Las azaleas se caracterizan por sus flores grandes y
+          coloridas, que pueden ser de color blanco, amarillo, naranja, rosa,
+          rojo o morado. Las flores suelen florecer en primavera, pero algunas
+          variedades pueden florecer en otoño o invierno.
+          <br />
+          <br />
+          Las azaleas también se han utilizado en ceremonias religiosas y
+          culturales durante siglos. Por ejemplo, las azaleas se utilizan a
+          menudo en arreglos florales para bodas, funerales y otros eventos
+          importantes. Aquí hay algunos ejemplos específicos de cómo se utilizan
+          las azaleas en la cultura:
+          <br />
+          <strong
+            >En Japón, las azaleas se utilizan a menudo en arreglos florales
+            para bodas.</strong
+          >
+          Se cree que las azaleas traen buena suerte y felicidad a las parejas
+          recién casadas.
+          <br />
+          <strong>
+            En China, las azaleas se utilizan a menudo en arreglos florales para
+            funerales.</strong
+          >
+          Se cree que las azaleas ayudan a guiar a los muertos al más allá.
+
+          <br />
+          <br />
+        </p>
+        <button onclick="closeModalAzalea()">Cerrar</button>
+      </div>
+    </div>
+
+    <div id="modal-aciano" class="modal">
+      <div class="modal-content">
+        <h2>Acianos</h2>
+        <p>
+          Los acianos son flores silvestres que se encuentran en todo el mundo.
+          Son una de las flores más comunes y se pueden encontrar en una
+          variedad de colores, incluidos el azul, el blanco, el amarillo y el
+          rosa. Los acianos son flores anuales, lo que significa que mueren al
+          final de la temporada de crecimiento. Los acianos tienen un
+          significado simbólico de amor, paz y esperanza. Se suelen regalar como
+          símbolo de afecto o admiración.
+
+          <br />
+          <br />
+          Los acianos son originarios de Europa, Asia y África. Se han
+          naturalizado en todo el mundo y se pueden encontrar en una variedad de
+          hábitats, incluidos campos, prados y bordes de caminos. Los acianos
+          son flores pequeñas, con un diámetro de aproximadamente 2 a 3
+          centímetros. Tienen pétalos de forma ovalada que están dispuestos en
+          forma de disco. Los pétalos pueden ser de color azul, blanco, amarillo
+          o rosa.
+
+          <br />
+          <br />
+        </p>
+        <button onclick="closeModalAciano()">Cerrar</button>
+      </div>
+    </div>
+  </body>
+</html>
